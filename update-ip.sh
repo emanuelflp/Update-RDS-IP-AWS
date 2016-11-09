@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Script para update automatico do IP do RDS no /etc/hosts a cada 1 minuto.
+
 USER=`whoami`
 if [ $USER != "root" ]; then
     echo "Este processo deve ser executado como root."
